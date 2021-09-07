@@ -10,6 +10,7 @@ When using this as a script, you need to `pip install prettytable argparse`.
 You could save this file to the trex path `automation/trex_control_plane/interactive` and start it.
 
 - Note: The version of Trex should be v2.87 or above!
+- Note: This script is designed for the one port topology, which means the traffic will send out of one trex port and receive traffic on the same port.
 
 # CLI Options 
 ```shell
