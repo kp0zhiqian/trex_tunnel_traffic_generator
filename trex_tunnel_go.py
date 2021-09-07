@@ -44,6 +44,7 @@ class Address():
         return self._src
     @src.setter
     def src(self, value):
+        # TODO: Add checker for MAC/IP address
         self._src = value
     
     @property
@@ -51,6 +52,7 @@ class Address():
         return self._dst
     @dst.setter
     def dst(self, value):
+        # TODO: Add checker for MAC/IP address
         self._dst = value
     
 
@@ -156,7 +158,6 @@ class Streamer(STLClient):
             client.reset(ports=0)
         except Exception as E:
             print(E)
-            print("ERROR")
         finally:
             client.disconnect()
 
